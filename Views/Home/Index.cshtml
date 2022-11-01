@@ -1,0 +1,34 @@
+﻿@model Project1.Models.Customer
+@{
+    ViewBag.Title = "Home Page";
+}
+<div class="jumbotron">
+    <h1>Arthris Login</h1>
+    @using (Html.BeginForm("SubmitData", "Home", FormMethod.Post))
+    {
+    <label class="lead" style="font-size: 31px; vertical-align: sub;">Username :  </label>@Html.TextBox("Username")<br />
+    <label class="lead" style="font-size: 31px;vertical-align: sub;">Password :  </label>@Html.Password("Password")<br />
+    
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Log in &raquo;</a></p>
+    }
+</div>
+
+<div class="row">
+    <div >
+        <h2>Who am I?</h2>
+        <p><h2>
+    I am an Artist who loves development and creating beautiful websites. You can go through my portfolio to know me better.</h2>
+</p>
+        <p><a class="btn btn-default" href="https://hpsportfolio.dorik.io/">portfolio website &raquo;</a></p>
+    </div><br />
+    <div >
+        <h2>My Works<h2>
+        <p>you can know more about my work by visiting my github profile.Click on below link to visit my github profile.</p>
+        <p><a class="btn btn-default" href="https://github.com/HrishikeshSarate/Note-it-">Github &raquo;</a></p>
+    </div><br />
+    <div >
+        <h2>My Resume</h2>
+        <p><h2>Click on the below link to download my Resume</h2></p>
+        <p><a class="btn btn-default" href="https://drive.google.com/file/d/1bB0pdNsrkzs3_lRUksGz5sI5_5PVKXqs/view?usp=sharing">Download &raquo;</a></p>
+    </div>
+</div>
